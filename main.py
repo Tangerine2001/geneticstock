@@ -1,2 +1,7 @@
+from Bot import Bot
+
 def main():
-    print("something")
+    b = Bot("BooBoo")
+    botList = []
+    for i in range(500):
+        botList[i] = Bot("change this please")
