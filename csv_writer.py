@@ -1,15 +1,15 @@
-import datetime
 import csv
-
+import requests
+import time
 
 stock_list = ["SCPS", "MMAC", "CREX", "PTPI", "GVP", "SPCE", "VSTM", "KRBP", "RHE", "BTX", "JZXN", "VRTV", "APM",
-                  "RCON", "XELB", "TLC", "INBX", "LBPH", "MCF", "FTK", "RNGR", "OBLN", "AINC", "RIOT", "AMC", "SBBP",
-                  "JAGX", "DRTT", "GTX", "ELYS", "TDUP", "HIMX", "STEM", "MARA", "AGS", "RYB", "BWAY", "PANL", "NCSM",
-                  "BFI", "RENN", "LHDX", "SKYT", "GMBL", "BYND", "BGI", "BOTJ", "DSX", "SQSP", "INZY", "MEC", "EXPR",
-                  "RSVA", "NMRD", "AXR", "LBPS", "OCFT", "TGI", "CAMT", "CNEY", "PLXP", "FTCI", "BRN", "PRCH", "VIAO",
-                  "GLDG", "LJPC", "IKT", "QRHC", "RAIN", "IHT", "GTIM", "SQFT", "RBLX", "CARE", "PATH", "LXEH", "PRTH",
-                  "KSPN", "XYF", "KOS", "TRIB", "ICON", "SELB", "AIH", "SITM", "NTZ", "VYNT", "USDP", "FLGC", "NOVN",
-                  "SB", "WSTG", "ESEA", "SKLZ", "EAST", "DKNG", "JMP", "ETWO", "MGI"]
+              "RCON", "XELB", "TLC", "INBX", "LBPH", "MCF", "FTK", "RNGR", "OBLN", "AINC", "RIOT", "AMC", "SBBP",
+              "JAGX", "DRTT", "GTX", "ELYS", "TDUP", "HIMX", "STEM", "MARA", "AGS", "RYB", "BWAY", "PANL", "NCSM",
+              "BFI", "RENN", "LHDX", "SKYT", "GMBL", "BYND", "BGI", "BOTJ", "DSX", "SQSP", "INZY", "MEC", "EXPR",
+              "RSVA", "NMRD", "AXR", "LBPS", "OCFT", "TGI", "CAMT", "CNEY", "PLXP", "FTCI", "BRN", "PRCH", "VIAO",
+              "GLDG", "LJPC", "IKT", "QRHC", "RAIN", "IHT", "GTIM", "SQFT", "RBLX", "CARE", "PATH", "LXEH", "PRTH",
+              "KSPN", "XYF", "KOS", "TRIB", "ICON", "SELB", "AIH", "SITM", "NTZ", "VYNT", "USDP", "FLGC", "NOVN",
+              "SB", "WSTG", "ESEA", "SKLZ", "EAST", "DKNG", "JMP", "ETWO", "MGI"]
 
 
 def write_csv():
