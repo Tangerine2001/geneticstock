@@ -1,6 +1,7 @@
 import random
 from copy import copy
 from Bot import Bot
+import requests
 
 
 def main():
