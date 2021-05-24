@@ -6,7 +6,8 @@ class Bot:
         self.name = name
         self.weights = weights
         if not is_random:
-            self.weights += random.uniform(-1, 1)
+            for i in range(len(self.weights)):
+                self.weights[i] += random.uniform(-1, 1)
 
     def __eq__(self, other):
         return self.name == other.name
