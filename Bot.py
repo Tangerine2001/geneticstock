@@ -2,7 +2,7 @@ import random
 
 
 class Bot:
-    def __init__ (self, name, is_random, weights):
+    def __init__(self, name, is_random, weights):
         self.name = name
         self.weights = weights
         if not is_random:
@@ -14,4 +14,3 @@ class Bot:
 
     def __repr__(self):
         return "Bot(Name: {})".format(self.name)
-
